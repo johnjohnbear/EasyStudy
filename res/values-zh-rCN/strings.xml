@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">易学习</string>
+    <string name="action_settings">设置</string>
+    <string name="start_learn">开始学习吧</string>
+    <string name="study_activity_label">让我们学习吧</string>
+    <string name="got_it">我会了</string>
+    <string name="no_idea">我还不会</string>
+</resources>
