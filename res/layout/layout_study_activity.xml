@@ -33,7 +33,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/dockbar"
         android:layout_alignParentLeft="true"
@@ -45,8 +45,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
-            android:textSize="150dp"
-            android:text="易" />
+            android:textSize="150sp"/>
 
     </LinearLayout>
 

@@ -50,7 +50,7 @@ public class StudyActivity extends Activity {
 		current++;
 		if(endOfContent())
 		{
-			updateWhiteBoardContent("Done");			
+			updateWhiteBoardContent(getString(R.string.accomplish_string));		
 		}
 		else
 		{

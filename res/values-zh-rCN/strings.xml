@@ -6,4 +6,5 @@
     <string name="study_activity_label">让我们学习吧</string>
     <string name="got_it">我会了</string>
     <string name="no_idea">我还不会</string>
+    <string name="accomplish_string">完成</string>
 </resources>
