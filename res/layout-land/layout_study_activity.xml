@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_gravity="center_vertical" >
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
 
-    <RelativeLayout
-        android:id="@+id/dockbar"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="fill_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true" >
+        android:layout_weight="4"
+        android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/no_idea_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="18dp"
-            android:onClick="onClickNoIdea"
-            android:text="@string/no_idea" />
-
-        <Button
-            android:id="@+id/got_it_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/no_idea_button"
-            android:layout_alignLeft="@+id/no_idea_button"
-            android:layout_marginBottom="21dp"
-            android:onClick="onClickGotIt"
-            android:text="@string/got_it" />
-
-  
-
-    </RelativeLayout>
-
-      <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="69dp"
-            android:layout_marginTop="23dp"
-            android:orientation="vertical" >
         <TextView
             android:id="@+id/whiteboard"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
-            android:textSize="150sp"/>
-        </LinearLayout>
+            android:textSize="150sp" />
+    </LinearLayout>
 
-</RelativeLayout>
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/got_it_button"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="onClickGotIt"
+            android:text="@string/got_it" />
+
+        <Button
+            android:id="@+id/no_idea_button"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="onClickNoIdea"
+            android:text="@string/no_idea" />
+    </TableLayout>
+
+</LinearLayout>
